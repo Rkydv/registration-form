@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="#" id="reg">
+        <h2 >REGISTRATION FORM</h2>
+
+        <table >
+            <div class="d1">
+            <tr>
+                <td colspan="2">
+            <h3 >PERSONAL INFORMATION :-</h3>
+        </div>
+        </td>
+        </tr>
+            
+            <tr>
+                <td><label for="fn">FIRST NAME :*   </label></td>
+                <td><input type="text" id="fn" required title="must fill"></td>
+            </tr>
+            <tr>
+                <td><label for="sn">LAST NAME :*</label></td>
+                <td><input type="text" id="sn" required title="must fill"></td>
+            </tr>
+            <tr>
+                <td><label for="ue">EMAIL:* </label></td>
+                <td><input type="email" id="ue" required title="must fill"></td>
+            </tr>
+            <tr>
+                <td><label for="pn">PHONE NUMBER :* </label></td>
+                <td><input type="tel" size="" id="pn" pattern="[789][0-9]{9}" title="ONLY NUMBERS " required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <h3>ACCOUNT DETAILS :- </h3>
+                
+            </td>
+            </tr>
+          
+          
+            <tr>
+                <td><label for="un">USER NAME :* </label></td>
+                <td><input type="text" maxlength="15" minlength="5" id="un"  required> </td>
+            </tr>
+            <tr>
+                <td><label for="up" >PASSWORD :* </label></td>
+                <td><input type="password" id="up"  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
+            </tr>
+            <tr>
+                <td><label for="Cup" >CONFIRM PASSWORD :* </label></td>
+                <td><input type="password"   required id="Cup" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><h3>ADDRESS:-</h3></td>
+            </tr>
+            <tr>
+                <td><label for="ad1">ADDRESS LINE 1 :*</label></td>
+                <td><textarea id="ad1" rows="2" cols="21"  required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="ad2">ADDRESS LINE 2 :*</label></td>
+                <td><textarea id="ad2" rows="2" cols="21"  required></textarea></td>
+            </tr>
+           <tr>
+            <td><label for="uc">CITY :*</label></td>
+            <td><input type="text" id="uc"  required></td>
+           </tr>
+           <tr>
+            <td><label for="us">STATE :*</label></td>
+            <td><select>
+                <option selected>DELHI</option>
+                <option>UTTAR PRADESH</option>
+                <option>TAMILNADU</option>
+                <option>RAJSTAN</option>
+                <option>BIHAR</option>
+                
+            </select></td>
+           </tr>
+           <tr>
+            <td><label for="pin">ZIP CODE :*</label></td>
+            <td><input type="number" id="pin" size="6"  required></td>
+            </tr>
+           <tr>
+            <td colspan="3">
+                <h3>PREFERENCES:-</h3>
+            </td>
+
+           </tr>
+           <tr>
+            <td><label for="ug">GENDER :*</label></td>
+            
+            <td> <input type="radio" name="ug"  required><label >MALE</label>
+            <input type="radio" name="ug"  required><label >FEMALE</label>
+             <input type="radio" name="ug"  required><label >OTHER</label></td>
+
+           </tr>
+           <tr>
+            <td>
+                <label >SUBSCRIBE TO NEWS LETTER : </label></td>  
+              <td><input type="checkbox" > </td>
+           
+           </tr>
+           <tr>
+            <td>
+                <label>SHORT BIO : </label>
+                
+            </td>
+            <td>
+                
+                <textarea maxlength="200" placeholder="tell us about yourself" rows="3" cols="21"></textarea>
+            </td>
+           </tr>
+          
+           <tr>
+            <td colspan="2" >
+                <div class="d1">
+                <input type="checkbox"  required>
+                <b><label> I AGREE WITH T&C* : </label></b>
+            </div>
+            </td>
+           </tr>
+           <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <h4>
+            <button type="submit">REGISTER</button>
+            <button type="reset">RESET</button>
+        </h4>
+        </td>
+        </tr>
+            
+           </tfoot>
+        </table>
+        <br>
+        <hr>
+
+           <tr>
+            <td>
+                <br>
+                <h3>
+                    TERMS AND CONDITION:-
+                </h3>
+            </td>
+           </tr>
+           <tr> 
+            <td>
+                <iframe src="tnc.html" width="900PX" height="300px"></iframe>
+                
+            </td>
+           </tr>
+
+       
+       
+    </form>
+</body>
+</html>
